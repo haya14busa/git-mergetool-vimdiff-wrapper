@@ -1,0 +1,7 @@
+[merge]
+    tool = myvimdiff
+[mergetool]
+    prompt = false
+    keepBackup = false
+[mergetool "myvimdiff"]
+	cmd = myvimdiff \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
