@@ -1,0 +1,9 @@
+#!/bin/sh
+# $1 $2 $3 $4
+# MERGED LOCAL BASE REMOTE
+if test -s $3
+then
+    /usr/local/bin/vim -f -d -c 'wincmd J' $1 $2 $3 $4
+else
+    /usr/local/bin/vim -f -d -c 'wincmd J' $1 $2 $4
+fi
